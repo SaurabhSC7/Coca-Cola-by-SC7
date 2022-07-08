@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset= "UTF-8">
+   <title>Cocacola Website Landing Page</title>
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+   <section>
+     <div class="circle"></div>
+     <header>
+       <a href="#"><img src="images/logo.png" class="logo"></a>
+       <div class="toggle" onclick="togglemenu()"></div>
+       <ul class="nav">
+         <li><a href="sample.html">Home</a></li>
+         <li><a href="sample.html">Menu</a></li>
+         <li><a href="sample.html">What's New</a></li>
+         <li><a href="sample.html">Contact</a></li>
+       </ul>
+     </header>
+     <div class="content">
+       <div class="textarea">
+         <h2>Taste the Feeling</h2>
+         <p>Our vision is to craft the brands and choice of drinks that people love, to refresh them in body & spirit. And done in ways that create a more sustainable business and better shared future that makes a difference in people's lives, communities and our planet.</p>
+         <a href="sample.html">Learn More</a>
+       </div>
+
+       <div class="imgbox">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/cocacola1.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/cocacola2.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/cocacola3.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/cocacola4.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/cocacola5.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/cocacola6.png" />
+            </div>
+          </div>
+        </div>
+       </div>
+
+     </div>
+     <ul class="sci">
+       <li><a href="https://www.facebook.com/Coca-Cola/"><img src="images/facebook.png"></a></li>
+       <li><a href="https://twitter.com/cocacolaco"><img src="images/twitter.png"></a></li>
+       <li><a href="https://www.instagram.com/accounts/login/?next=/cocacola/#:~:text=Coca%2DCola%20(%40cocacola)%20%E2%80%A2%20Instagram%20photos%20and%20videos"><img src="images/instagram.png"></a></li>
+     </ul>
+  </section>
+  <footer>
+    <p>Copyright &copy; www.Coca-Cola/by-SC7.com. All rights reserved</p>
+  </footer>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".swiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+
+    function togglemenu(){
+      const menutoggle = document.querySelector(".toggle");
+      const nav = document.querySelector(".nav");
+      menutoggle.classList.toggle("active");
+      nav.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
